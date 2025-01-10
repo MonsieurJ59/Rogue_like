@@ -35,20 +35,38 @@ public class PlayerStats : MonoBehaviour
         return _health;
     }
 
+    public void SetHealth(int value){
+        _health = value;
+    }
+
     public float GetSpeed(){
         return _speed;
+    }
+
+    public void SetSpeed(float value){
+        _speed = value;
     }
 
     public float GetCd(){
         return _cd;
     }
 
+    public void SetCd(float value){
+        _cd = value;
+    }
+
     public int GetDommage(){
         return _dommage;
+    }
+    public void SetDommage(int value){
+        _dommage = value;
     }
 
     public float GetBulletSpeed(){
         return _bulletSpeed;
+    }
+    public void SetBulletSpeed(float value){
+        _bulletSpeed = value;
     }
 
 }
