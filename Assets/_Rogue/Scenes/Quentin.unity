@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 563457431}
   - component: {fileID: 563457427}
   - component: {fileID: 563457434}
+  - component: {fileID: 563457436}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -391,7 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba9a8aa14d4385548be0cce78601df0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initHealth: 10
+  _initHealth: 100
   _initSpeed: 15
   _initCd: 0.5
   _initDommage: 1
@@ -418,6 +419,23 @@ MonoBehaviour:
   _healEffects:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &563457436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563457425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a236aa139b1e6a49b55a3d1bffa8f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _CurseHealth: -10
+  _CurseSpeed: -3
+  _CurseCd: 0.2
+  _CurseDommage: -1
+  _CurseBulletSpeed: -1
 --- !u!1 &824403437
 GameObject:
   m_ObjectHideFlags: 0
