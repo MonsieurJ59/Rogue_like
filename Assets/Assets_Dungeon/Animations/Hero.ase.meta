@@ -5,11 +5,51 @@ AssetOrigin:
   productId: 296458
   packageName: Dungeon Tale - Fantasy RPG Sprites FX Tileset
   packageVersion: 1.0
-  assetPath: Assets/Tileset/Dungeon Tale/Assets/Animations/Hero.ase
+  assetPath: Assets/Assets_Dungeon/Animations/Hero.ase
   uploadId: 693043
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Confuse
+    second: {fileID: 7400000, guid: 3d83a352ecf481e4a948dd2bb7736551, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Idle
+    second: {fileID: 7400000, guid: c27a637d65f41b8478abfd2c899645a7, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Move
+    second: {fileID: 7400000, guid: 3a71b5dfc46a1d04584746572078855a, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: None
+    second: {fileID: 7400000, guid: 17d6d7f3e58e1644db9a999a3e7104ad, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Sit
+    second: {fileID: 7400000, guid: 2943ba5cb85133944b2c28c229e898c0, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Stay
+    second: {fileID: 7400000, guid: 42ad897bc17ba514aa720d62f8275a1f, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Think
+    second: {fileID: 7400000, guid: b87f9ce2463f59e43a46bf71ac5612b6, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Use
+    second: {fileID: 7400000, guid: 7d100a211de1d244f94891e23cb37dcb, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -105,7 +145,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638493930716497791
+  platformSettingsDirtyTick: 638721228664080347
   textureAssetName: 
   singleSpriteImportData:
   - name: 

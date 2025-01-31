@@ -26,7 +26,7 @@ public class EnemyShot : MonoBehaviour
                 _timer = _cd;
                 Vector3 posInst = transform.position + new Vector3(dir.x * _distanceSpawn, dir.y * _distanceSpawn, 0);
                 GameObject instBullet = Instantiate(_bullet, transform.position, Quaternion.identity);
-                instBullet.GetComponent<Bullet>().Init(dir, _dommage, 5);
+                instBullet.GetComponent<EnemyBullet>().Init(dir, _dommage, 5, GetComponent<EnemyCurse>()._curse);
             }
         }
     }

@@ -9,6 +9,7 @@ public class HealthSystem : MonoBehaviour
     public int _health;
     int _currentHealth;
     public Slider _healthbar;
+    public bool _isAlive;
 
     [Header("Effects")]
     public UnityEvent _dieEffects;
@@ -18,6 +19,12 @@ public class HealthSystem : MonoBehaviour
     void Start()
     {
         _currentHealth = _health;
+        _isAlive = true;
+    }
+
+    public void ResetHealth(){
+        _currentHealth = _health;
+        _isAlive = true;
     }
 
     public void Hitted(int dommage){
@@ -25,6 +32,8 @@ public class HealthSystem : MonoBehaviour
         if(_currentHealth <= 0)
         {
             _currentHealth = 0;
+            _isAlive = false;
+            GetComponent<EnemyData>()._room.CheckClear();
             _dieEffects.Invoke();
         }
         _hitEffects.Invoke();

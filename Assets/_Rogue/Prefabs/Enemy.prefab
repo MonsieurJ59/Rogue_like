@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8276545918786470724}
   - component: {fileID: 914844000036997404}
+  - component: {fileID: 1416508918044475534}
   m_Layer: 6
   m_Name: Circle
   m_TagString: Untagged
@@ -87,6 +88,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1416508918044475534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338654256760952529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30535a2d2d05c3943b024a39239d5355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4398101495989039646
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,6 +112,8 @@ GameObject:
   - component: {fileID: 3832659646059104670}
   - component: {fileID: 7884431584931957070}
   - component: {fileID: 8396869054556177373}
+  - component: {fileID: 3113204032873454440}
+  - component: {fileID: 8359160809089975456}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
@@ -185,7 +200,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &8396869054556177373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 5
   _healthbar: {fileID: 7512641054216861312}
+  _isAlive: 0
   _dieEffects:
     m_PersistentCalls:
       m_Calls:
@@ -221,6 +237,34 @@ MonoBehaviour:
   _healEffects:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3113204032873454440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4398101495989039646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ea0f29f48efc9847a73b274ba1306fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _curse: 0
+--- !u!114 &8359160809089975456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4398101495989039646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12ffe785a58f519459b9fc3668b6efb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _initPos: {x: 0, y: 0, z: 0}
+  _room: {fileID: 0}
+  _healthSystem: {fileID: 8396869054556177373}
 --- !u!1 &6822945895661447826
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +277,7 @@ GameObject:
   - component: {fileID: 3499879526290912728}
   - component: {fileID: 270213573521169814}
   - component: {fileID: 2236818499967509791}
+  - component: {fileID: 7006305820993923528}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -281,7 +326,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!114 &270213573521169814
 MonoBehaviour:
@@ -323,6 +368,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7006305820993923528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822945895661447826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30535a2d2d05c3943b024a39239d5355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7395299163504820824
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -5,6 +5,8 @@ public class GameManager : MonoBehaviour
     public static GameManager _gameManager;
     public GameObject _player;
     public PlayerStats _playerStats;
+    public PlayerHealthSystem _playerHealthSystem;
+    public CurseSystem _curseSystem;
 
     void Awake()
     {

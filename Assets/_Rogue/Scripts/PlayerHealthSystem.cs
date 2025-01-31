@@ -19,11 +19,12 @@ public class PlayerHealthSystem : MonoBehaviour
         _currentHealth = GameManager._gameManager._playerStats.GetHealth();
     }
 
-    public void Hitted(int dommage){
+    public void Hitted(int dommage , CurseSystem.Curse curse){
         _currentHealth -= dommage;
         if(_currentHealth <= 0)
         {
             _currentHealth = 0;
+            GameManager._gameManager._curseSystem.ApplyCurse(curse);
             _dieEffects.Invoke();
         }
         _hitEffects.Invoke();
