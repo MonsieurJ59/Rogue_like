@@ -4,10 +4,22 @@ using UnityEngine.Events;
 
 public class Room : MonoBehaviour
 {
-    public bool clear;
+    public bool clear = false;
     public List<GameObject> _enemies;
     public UnityEvent _initEvent;
     public UnityEvent _clearEvent;
+
+    [Header("Doors Settings")]
+    public GameObject _doorTop;
+    public GameObject _doorBot;
+    public GameObject _doorLeft;
+    public GameObject _doorRight;
+
+    [Header("Spawn Setting")]
+    public Transform _spawnTop;
+    public Transform _spawnBot;
+    public Transform _spawnRight;
+    public Transform _spawnLeft;
 
     void Start()
     {
@@ -28,6 +40,21 @@ public class Room : MonoBehaviour
             enemy.GetComponent<EnemyData>().InitEnemy();
         }
 
+        _doorTop.SetActive(false);
+        _doorBot.SetActive(false);
+        _doorLeft.SetActive(false);
+        _doorRight.SetActive(false);
+
+        _doorTop.GetComponent<Door>()._isOpen = false;
+        _doorBot.GetComponent<Door>()._isOpen = false;
+        _doorLeft.GetComponent<Door>()._isOpen = false;
+        _doorRight.GetComponent<Door>()._isOpen = false;
+
+        _doorTop.GetComponent<Door>()._dir = Door.dir.top;
+        _doorBot.GetComponent<Door>()._dir = Door.dir.bot;
+        _doorLeft.GetComponent<Door>()._dir = Door.dir.left;
+        _doorRight.GetComponent<Door>()._dir = Door.dir.right;
+
         _initEvent.Invoke();
         CheckClear();
     }
@@ -45,7 +72,22 @@ public class Room : MonoBehaviour
     }
 
     public void SetDoors(bool up, bool down, bool right, bool left){
-
+        if(up){
+            _doorTop.SetActive(true);
+            _doorTop.GetComponent<Door>()._isOpen = false;
+        }
+        if(down){
+            _doorBot.SetActive(true);
+            _doorBot.GetComponent<Door>()._isOpen = false;
+        }
+        if(right){
+            _doorRight.SetActive(true);
+            _doorRight.GetComponent<Door>()._isOpen = false;
+        }
+        if(left){
+            _doorLeft.SetActive(true);
+            _doorLeft.GetComponent<Door>()._isOpen = false;
+        }
     }
 
     public void CheckClear()

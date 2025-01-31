@@ -21,6 +21,7 @@ public class DungeonGenerator : MonoBehaviour
     {
         GenerateDungeon();
         startRoomPrefab.GetComponent<Room>().InitRoom();
+        SetRoomDoors();
     }
 
     void GenerateDungeon()
@@ -125,5 +126,35 @@ public class DungeonGenerator : MonoBehaviour
             list[randomIndex] = temp;
         }
         return list;
+    }
+
+    void SetRoomDoors()
+    {
+        foreach (GameObject room in spawnedRooms)
+        {
+            Vector3 position = room.transform.position;
+            bool up = RoomExistsAt(position + new Vector3(0, roomSizeY, 0));
+            bool down = RoomExistsAt(position + new Vector3(0, -roomSizeY, 0));
+            bool right = RoomExistsAt(position + new Vector3(roomSizeX, 0, 0));
+            bool left = RoomExistsAt(position + new Vector3(-roomSizeX, 0, 0));
+            
+            Room roomScript = room.GetComponent<Room>();
+            if (roomScript != null)
+            {
+                roomScript.SetDoors(up, down, right, left);
+            }
+        }
+    }
+
+    bool RoomExistsAt(Vector3 position)
+    {
+        foreach (GameObject room in spawnedRooms)
+        {
+            if (room.transform.position == position)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
