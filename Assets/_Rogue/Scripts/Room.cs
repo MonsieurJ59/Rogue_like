@@ -29,6 +29,7 @@ public class Room : MonoBehaviour
         }
 
         _initEvent.Invoke();
+        CheckClear();
     }
 
     public void CloseRoom(){
@@ -41,6 +42,10 @@ public class Room : MonoBehaviour
     public void ClearEvent(){
         clear = true;
         _clearEvent.Invoke();
+    }
+
+    public void SetDoors(bool up, bool down, bool right, bool left){
+
     }
 
     public void CheckClear()
