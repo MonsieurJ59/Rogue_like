@@ -252,6 +252,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 1262364023}
   _playerStats: {fileID: 1262364025}
+  _playerHealthSystem: {fileID: 0}
+  _curseSystem: {fileID: 0}
 --- !u!4 &304575237
 Transform:
   m_ObjectHideFlags: 0
@@ -560,10 +562,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a236aa139b1e6a49b55a3d1bffa8f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _nbCursedHealth: 0
   _CurseHealth: -10
+  _nbCursedSpeed: 0
   _CurseSpeed: -3
+  _nbCursedCd: 0
   _CurseCd: 0.2
+  _nbCursedDommage: 0
   _CurseDommage: -1
+  _nbCursedBulletSpeed: 0
   _CurseBulletSpeed: -1
 --- !u!114 &1262364025
 MonoBehaviour:
@@ -776,7 +783,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19448455, g: 0.21050407, b: 0.2356776, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -801,7 +808,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 6.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
