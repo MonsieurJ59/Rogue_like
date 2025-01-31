@@ -23,13 +23,9 @@ public class Bullet : MonoBehaviour
         if (IsInLayerMask(other.gameObject))
         {
             HealthSystem healthSystem = other.gameObject.GetComponent<HealthSystem>();
-            PlayerHealthSystem playerHealthSystem = other.gameObject.GetComponent<PlayerHealthSystem>();
 
             if(healthSystem){
                healthSystem.Hitted(_dommage); 
-            }
-            if(playerHealthSystem){
-               playerHealthSystem.Hitted(_dommage); 
             }
 
             Destroy(this.gameObject);
