@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     public PlayerStats _playerStats;
     public PlayerHealthSystem _playerHealthSystem;
     public CurseSystem _curseSystem;
+    public GameObject _ancreCamera;
+    public DungeonGenerator _dungeonGenerator;
 
     void Awake()
     {

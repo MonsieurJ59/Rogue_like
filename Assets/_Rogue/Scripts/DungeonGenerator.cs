@@ -24,11 +24,25 @@ public class DungeonGenerator : MonoBehaviour
         SetRoomDoors();
     }
 
+    public void ResetDungeon()
+    {
+        foreach(GameObject room in spawnedRooms){
+            Room thisRoom = room.GetComponent<Room>();
+            thisRoom.ResetRoom();
+        }
+
+        GameManager._gameManager._ancreCamera.transform.position = Vector3.zero;
+        GameManager._gameManager._player.transform.position = Vector3.zero;
+
+        spawnedRooms[0].GetComponent<Room>().StartRoom();
+    }
+
     void GenerateDungeon()
     {
         // 1. Générer la salle initiale
         Vector3 startPosition = Vector3.zero;
         GameObject startRoom = Instantiate(startRoomPrefab, startPosition, Quaternion.identity);
+        startRoom.GetComponent<Room>().StartRoom();
         spawnedRooms.Add(startRoom);
         
         // 2. Générer les salles intermédiaires
@@ -39,6 +53,19 @@ public class DungeonGenerator : MonoBehaviour
 
         // 3. Trouver la salle la plus éloignée et la remplacer par la salle de fin
         ReplaceFurthestRoomWithEnd();
+
+        // 4. Numéroté les salles & Stocker les curseRoom
+        for (int i = 0; i < spawnedRooms.Count; i++)
+        {
+            Room thisRoom = spawnedRooms[i].GetComponent<Room>();
+            if (thisRoom != null)
+            {
+                thisRoom.index = i;
+            }
+
+            GameManager._gameManager._curseSystem._cursedRooms.Add(spawnedRooms[i].GetComponent<CurseRoom>());
+        }
+
     }
 
     void AddRandomRoom()
@@ -133,6 +160,10 @@ public class DungeonGenerator : MonoBehaviour
         foreach (GameObject room in spawnedRooms)
         {
             Vector3 position = room.transform.position;
+            Room upDoor = RoomExistsAt(position + new Vector3(0, roomSizeY, 0));
+            Room downDoor = RoomExistsAt(position + new Vector3(0, -roomSizeY, 0));
+            Room rightDoor = RoomExistsAt(position + new Vector3(roomSizeX, 0, 0));
+            Room leftDoor = RoomExistsAt(position + new Vector3(-roomSizeX, 0, 0));
             bool up = RoomExistsAt(position + new Vector3(0, roomSizeY, 0));
             bool down = RoomExistsAt(position + new Vector3(0, -roomSizeY, 0));
             bool right = RoomExistsAt(position + new Vector3(roomSizeX, 0, 0));
@@ -141,20 +172,20 @@ public class DungeonGenerator : MonoBehaviour
             Room roomScript = room.GetComponent<Room>();
             if (roomScript != null)
             {
-                roomScript.SetDoors(up, down, right, left);
+                roomScript.SetDoors(up, down, right, left, upDoor, downDoor, rightDoor, leftDoor);
             }
         }
     }
 
-    bool RoomExistsAt(Vector3 position)
+    Room RoomExistsAt(Vector3 position)
     {
         foreach (GameObject room in spawnedRooms)
         {
             if (room.transform.position == position)
             {
-                return true;
+                return room.GetComponent<Room>();
             }
         }
-        return false;
+        return null;
     }
 }

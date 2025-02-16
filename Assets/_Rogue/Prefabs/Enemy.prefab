@@ -112,7 +112,6 @@ GameObject:
   - component: {fileID: 3832659646059104670}
   - component: {fileID: 7884431584931957070}
   - component: {fileID: 8396869054556177373}
-  - component: {fileID: 3113204032873454440}
   - component: {fileID: 8359160809089975456}
   m_Layer: 6
   m_Name: Enemy
@@ -237,19 +236,6 @@ MonoBehaviour:
   _healEffects:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3113204032873454440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4398101495989039646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ea0f29f48efc9847a73b274ba1306fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _curse: 0
 --- !u!114 &8359160809089975456
 MonoBehaviour:
   m_ObjectHideFlags: 0

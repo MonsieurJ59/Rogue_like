@@ -37,20 +37,24 @@ public class Door : MonoBehaviour
             switch(_dir){
                 case dir.top :
                     GameManager._gameManager._player.transform.position = _nextRoom._spawnBot.position;
+                    GameManager._gameManager._ancreCamera.transform.position = GameManager._gameManager._ancreCamera.transform.position + new Vector3(0,GameManager._gameManager._dungeonGenerator.roomSizeY,0);
                     break;
                 case dir.bot :
                     GameManager._gameManager._player.transform.position = _nextRoom._spawnTop.position;
+                    GameManager._gameManager._ancreCamera.transform.position = GameManager._gameManager._ancreCamera.transform.position + new Vector3(0,-GameManager._gameManager._dungeonGenerator.roomSizeY,0);
                     break;
                 case dir.right :
                     GameManager._gameManager._player.transform.position = _nextRoom._spawnLeft.position;
+                    GameManager._gameManager._ancreCamera.transform.position = GameManager._gameManager._ancreCamera.transform.position + new Vector3(GameManager._gameManager._dungeonGenerator.roomSizeX,0,0);
                     break;
                 case dir.left :
                     GameManager._gameManager._player.transform.position = _nextRoom._spawnRight.position;
+                    GameManager._gameManager._ancreCamera.transform.position = GameManager._gameManager._ancreCamera.transform.position + new Vector3(-GameManager._gameManager._dungeonGenerator.roomSizeX,0,0);
                     break;
             }
 
             _myRoom.CloseRoom();
-            _nextRoom.InitRoom();
+            _nextRoom.StartRoom();
            
         }
     }

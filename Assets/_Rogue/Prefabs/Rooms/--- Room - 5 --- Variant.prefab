@@ -723,6 +723,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3821537984087514898, guid: ff5982555346e744c870dafb76b5c37f, type: 3}
+      propertyPath: _enemies.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3821537984087514898, guid: ff5982555346e744c870dafb76b5c37f, type: 3}
+      propertyPath: '_enemies.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8380609446498964675}
     - target: {fileID: 8023510769532670215, guid: ff5982555346e744c870dafb76b5c37f, type: 3}
       propertyPath: m_Tiles.Array.size
       value: 112
@@ -4129,10 +4137,93 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3498338300704436246, guid: ff5982555346e744c870dafb76b5c37f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2300938824083529841}
+    - targetCorrespondingSourceObject: {fileID: 1866105426456586059, guid: ff5982555346e744c870dafb76b5c37f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5210880600773038706}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff5982555346e744c870dafb76b5c37f, type: 3}
+--- !u!4 &2038305449662523425 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1866105426456586059, guid: ff5982555346e744c870dafb76b5c37f, type: 3}
+  m_PrefabInstance: {fileID: 408764331363077994}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3828236533276524412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3498338300704436246, guid: ff5982555346e744c870dafb76b5c37f, type: 3}
   m_PrefabInstance: {fileID: 408764331363077994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &635831232248344032
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2038305449662523425}
+    m_Modifications:
+    - target: {fileID: 4648323323314306962, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648323323314306962, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648323323314306962, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648323323314306962, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648323323314306962, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648323323314306962, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648323323314306962, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648323323314306962, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648323323314306962, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648323323314306962, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571405745361021265, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571405745361021265, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8979908004645730595, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+      propertyPath: m_Name
+      value: Enemy - Shotter Variant Variant 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+--- !u!4 &5210880600773038706 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4648323323314306962, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+  m_PrefabInstance: {fileID: 635831232248344032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8380609446498964675 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8979908004645730595, guid: 8426a03ce5be53146b6295927bc5ebd5, type: 3}
+  m_PrefabInstance: {fileID: 635831232248344032}
   m_PrefabAsset: {fileID: 0}

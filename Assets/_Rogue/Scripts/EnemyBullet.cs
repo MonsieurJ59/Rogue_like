@@ -6,17 +6,18 @@ public class EnemyBullet : MonoBehaviour
     private float _speed;
     private int _dommage = 1;
     public LayerMask _collideWith;
-    private CurseSystem.Curse _curse;
+    private CurseRoom _curseRoom;
 
     void Update()
     {
         transform.position += new Vector3(_dir.x , _dir.y, 0)  * _speed * Time.deltaTime;
     }
 
-    public void Init(Vector2 dir , int dommage, float speed, CurseSystem.Curse curse){
+    public void Init(Vector2 dir , int dommage, float speed, CurseRoom curseRoom){
         _dir = dir;
         _dommage = dommage;
         _speed = speed;
+        _curseRoom = curseRoom;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -26,7 +27,7 @@ public class EnemyBullet : MonoBehaviour
             PlayerHealthSystem playerHealthSystem = other.gameObject.GetComponent<PlayerHealthSystem>();
 
             if(playerHealthSystem){
-               playerHealthSystem.Hitted(_dommage, _curse); 
+               playerHealthSystem.Hitted(_dommage, _curseRoom); 
             }
 
             Destroy(this.gameObject);

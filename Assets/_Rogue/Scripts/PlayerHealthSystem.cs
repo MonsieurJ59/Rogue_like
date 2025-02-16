@@ -19,13 +19,14 @@ public class PlayerHealthSystem : MonoBehaviour
         _currentHealth = GameManager._gameManager._playerStats.GetHealth();
     }
 
-    public void Hitted(int dommage , CurseSystem.Curse curse){
+    public void Hitted(int dommage , CurseRoom curseRoom){
         _currentHealth -= dommage;
         if(_currentHealth <= 0)
         {
             _currentHealth = 0;
-            GameManager._gameManager._curseSystem.ApplyCurse(curse);
+            curseRoom.AddCurse();
             _dieEffects.Invoke();
+            ResetDungeon();
         }
         _hitEffects.Invoke();
         SetHealth();
@@ -47,5 +48,10 @@ public class PlayerHealthSystem : MonoBehaviour
         if(_healthbar){
             _healthbar.value = (float) _currentHealth / (float) GameManager._gameManager._playerStats.GetHealth();
         }
+    }
+
+    public void ResetDungeon(){
+        _currentHealth = GameManager._gameManager._playerStats.GetHealth();
+        GameManager._gameManager._dungeonGenerator.ResetDungeon();
     }
 }

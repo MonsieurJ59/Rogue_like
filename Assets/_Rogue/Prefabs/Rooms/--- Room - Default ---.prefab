@@ -288,6 +288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2714053380342758093}
   - component: {fileID: 3821537984087514898}
+  - component: {fileID: 9123678217387742740}
   m_Layer: 0
   m_Name: --- Room - Default ---
   m_TagString: Untagged
@@ -328,7 +329,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a565bebc527a5d54590734f8956751b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   clear: 0
+  started: 0
+  canUp: 0
+  canDown: 0
+  canLeft: 0
+  canRight: 0
   _enemies: []
   _initEvent:
     m_PersistentCalls:
@@ -343,7 +350,21 @@ MonoBehaviour:
   _spawnTop: {fileID: 8769504130031690195}
   _spawnBot: {fileID: 144810874722322960}
   _spawnRight: {fileID: 4173139749868234465}
-  _spawnLeft: {fileID: 4173139749868234465}
+  _spawnLeft: {fileID: 8418858745929078304}
+--- !u!114 &9123678217387742740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396512651436792291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a4a1c945a61f446953cbc1e7e1229b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nbCurse: 0
+  _curse: 0
 --- !u!1 &1510105503164803491
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,7 +477,7 @@ Transform:
   m_GameObject: {fileID: 1613299488592276636}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.48, z: 0}
+  m_LocalPosition: {x: 0, y: 3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -682,7 +703,7 @@ Transform:
   m_GameObject: {fileID: 4101566234358732316}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.91, y: 0, z: 0}
+  m_LocalPosition: {x: -8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -745,7 +766,7 @@ Transform:
   m_GameObject: {fileID: 4759516066909285005}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.51, y: 0, z: 0}
+  m_LocalPosition: {x: 8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3176,7 +3197,7 @@ Transform:
   m_GameObject: {fileID: 8104104712613212424}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.05, z: 0}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3300,6 +3321,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1534334864821745197}
     m_Modifications:
+    - target: {fileID: 373040765557854982, guid: 306b88c4476801d46b3fead459c83950, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3536118848173233401, guid: 306b88c4476801d46b3fead459c83950, type: 3}
+      propertyPath: _dir
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3536118848173233401, guid: 306b88c4476801d46b3fead459c83950, type: 3}
       propertyPath: _myRoom
       value: 
@@ -3371,6 +3400,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1534334864821745197}
     m_Modifications:
+    - target: {fileID: 373040765557854982, guid: 306b88c4476801d46b3fead459c83950, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3536118848173233401, guid: 306b88c4476801d46b3fead459c83950, type: 3}
+      propertyPath: _dir
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3536118848173233401, guid: 306b88c4476801d46b3fead459c83950, type: 3}
       propertyPath: _myRoom
       value: 
@@ -3442,6 +3479,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1534334864821745197}
     m_Modifications:
+    - target: {fileID: 373040765557854982, guid: 306b88c4476801d46b3fead459c83950, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3536118848173233401, guid: 306b88c4476801d46b3fead459c83950, type: 3}
+      propertyPath: _dir
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3536118848173233401, guid: 306b88c4476801d46b3fead459c83950, type: 3}
       propertyPath: _myRoom
       value: 
@@ -3513,6 +3558,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1534334864821745197}
     m_Modifications:
+    - target: {fileID: 373040765557854982, guid: 306b88c4476801d46b3fead459c83950, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 3536118848173233401, guid: 306b88c4476801d46b3fead459c83950, type: 3}
       propertyPath: _myRoom
       value: 
