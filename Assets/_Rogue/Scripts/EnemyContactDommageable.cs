@@ -20,8 +20,7 @@ public class EnemyContactDommageable : MonoBehaviour
         if(_timer > _cd && _enemyAI.isCollidingWithPlayer)
         {
             _timer = 0;
-            CurseSystem.Curse curse = GetComponent<EnemyCurse>()._curse; 
-            GameManager._gameManager._playerHealthSystem.Hitted(_dommage, curse);
+            GameManager._gameManager._playerHealthSystem.Hitted(_dommage, this.gameObject.GetComponent<EnemyData>()._room._curseRoom);
         }
     
     }

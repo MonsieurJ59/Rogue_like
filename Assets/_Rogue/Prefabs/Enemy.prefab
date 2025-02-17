@@ -112,7 +112,6 @@ GameObject:
   - component: {fileID: 3832659646059104670}
   - component: {fileID: 7884431584931957070}
   - component: {fileID: 8396869054556177373}
-  - component: {fileID: 3113204032873454440}
   - component: {fileID: 8359160809089975456}
   m_Layer: 6
   m_Name: Enemy
@@ -237,19 +236,6 @@ MonoBehaviour:
   _healEffects:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3113204032873454440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4398101495989039646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ea0f29f48efc9847a73b274ba1306fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _curse: 0
 --- !u!114 &8359160809089975456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,6 +482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Healthbar - Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3902888718345836736, guid: 64a9203bb2bc37648a8b576271f0b57c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3737897332693287829, guid: f640df8a0df73274e949ae8d69f26347, type: 3}
     - target: {fileID: 8936561266065186868, guid: 64a9203bb2bc37648a8b576271f0b57c, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
