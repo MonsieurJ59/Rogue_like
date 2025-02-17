@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1322382448036673799
+--- !u!1001 &9199629395674126057
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -16,22 +16,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 711927732700276605, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
-      propertyPath: m_Name
-      value: Visual
-      objectReference: {fileID: 0}
-    - target: {fileID: 711927732700276605, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1711563233662220464, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 94621673, guid: b631ed305dfd43c488e0f8edf5c829bc, type: 3}
-    - target: {fileID: 1711563233662220464, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: -995825184, guid: b631ed305dfd43c488e0f8edf5c829bc, type: 3}
     - target: {fileID: 1711563233662220464, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -43,10 +31,6 @@ PrefabInstance:
     - target: {fileID: 1711563233662220464, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
       propertyPath: m_Color.r
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1711563233662220464, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1902363859101517059, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -90,62 +74,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2773001818154599346, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
       propertyPath: m_Name
-      value: Enemy - Hunter Variant Variant 1
+      value: Enemy - Slim small - Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3333450769667438642, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4014680367001594134, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
-      propertyPath: _dommage
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5317347424167365377, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 1
+      propertyPath: m_Radius
+      value: 0.125
       objectReference: {fileID: 0}
     - target: {fileID: 7615216286396478184, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
+      propertyPath: m_LocalScale.x
+      value: 0.25
       objectReference: {fileID: 0}
-    - target: {fileID: 8030806556301374732, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
-      propertyPath: _enemyInvisible
-      value: 
-      objectReference: {fileID: 6345228419107029324}
-    - target: {fileID: 8067415461939049073, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
-      propertyPath: _health
-      value: 40
+    - target: {fileID: 7615216286396478184, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 711927732700276605, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6345228419107029324}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
---- !u!1 &1998275885881794170 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 711927732700276605, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
-  m_PrefabInstance: {fileID: 1322382448036673799}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6345228419107029324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1998275885881794170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc042d6df88a14591aab3dc345a4fb66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  disappearTime: 5
-  interval: 2
-  myUI: {fileID: 6307131316620468793}
---- !u!1 &6307131316620468793 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5034291354998954814, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
-  m_PrefabInstance: {fileID: 1322382448036673799}
-  m_PrefabAsset: {fileID: 0}

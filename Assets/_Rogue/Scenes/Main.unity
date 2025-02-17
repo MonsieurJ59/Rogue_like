@@ -735,7 +735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _initHealth: 100
-  _initHealByRoom: 10
+  _initHealByRoom: 0
   _initSpeed: 10
   _initCd: 0.3
   _initDommage: 5

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System.Linq;
 
 public class Room : MonoBehaviour
 {
@@ -64,6 +65,8 @@ public class Room : MonoBehaviour
             // Désactive l'ennemi et réinitialise ses valeurs
             enemy.SetActive(false);
         }
+
+        
         SetDoors();
     }
 
@@ -78,6 +81,7 @@ public class Room : MonoBehaviour
             enemy.SetActive(true);
             enemy.GetComponent<EnemyData>().InitEnemy();
         }
+        
         started = true;
         _visible = true;
     }
@@ -118,6 +122,7 @@ public class Room : MonoBehaviour
             clear = true;
             GameManager._gameManager._playerHealthSystem.HealByClearRoom();
         }
+
         this.gameObject.GetComponent<CurseRoom>().Uncurse();
         OpenDoors();
         _clearEvent.Invoke();
