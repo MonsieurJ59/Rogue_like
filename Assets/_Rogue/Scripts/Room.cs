@@ -14,6 +14,9 @@ public class Room : MonoBehaviour
     public bool canLeft;
     public bool canRight;
 
+    public GameObject _cacheMaps;
+    public bool _visible = false;
+
     public List<GameObject> _enemies;
     public UnityEvent _initEvent;
     public UnityEvent _clearEvent;
@@ -29,6 +32,17 @@ public class Room : MonoBehaviour
     public Transform _spawnBot;
     public Transform _spawnRight;
     public Transform _spawnLeft;
+    
+
+    public void ShowMaps(bool openMaps){
+        if(openMaps){
+            _cacheMaps.SetActive(!_visible);
+        }
+        else{
+            _cacheMaps.SetActive(false);
+        }
+    }
+
 
     void Start()
     {
@@ -65,6 +79,7 @@ public class Room : MonoBehaviour
             enemy.GetComponent<EnemyData>().InitEnemy();
         }
         started = true;
+        _visible = true;
     }
 
     public void InitRoom()

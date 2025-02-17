@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f5539b5142e044ce0940dcc00795623e
+guid: 15a00ceec8777de4c9d3e715cf5f9e8b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6059687371871541870
-    second: doorOpen_0
+      213: 4220995428947566976
+    second: corps_face_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: doorOpen_0
+      name: corps_face_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 259
-        height: 229
+        width: 336
+        height: 469
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2952dadd07aa7eba0800000000000000
-      internalID: -6059687371871541870
+      spriteID: 081a7f49afcf39a30800000000000000
+      internalID: 4220995428947566976
       vertices: []
       indices: 
       edges: []

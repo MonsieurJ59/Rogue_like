@@ -1,0 +1,54 @@
+{
+    "name": "Menu",
+    "maps": [
+        {
+            "name": "Menu",
+            "id": "6bc8026d-3613-4b56-b2ee-93cbdfc2cb33",
+            "actions": [
+                {
+                    "name": "Maps",
+                    "type": "Button",
+                    "id": "807c521e-474c-4044-bc92-ce417b2052ce",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Curses",
+                    "type": "Button",
+                    "id": "6b6d997b-aa48-4c8c-9264-5068b48ad60e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "84fb40d6-39dc-482b-9cc1-08b1d98d8039",
+                    "path": "<Keyboard>/semicolon",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Maps",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "57a9f174-6550-4d95-a025-f7f0fec376ef",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Curses",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

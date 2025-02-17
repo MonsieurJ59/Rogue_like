@@ -482,6 +482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Healthbar - Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3902888718345836736, guid: 64a9203bb2bc37648a8b576271f0b57c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3737897332693287829, guid: f640df8a0df73274e949ae8d69f26347, type: 3}
     - target: {fileID: 8936561266065186868, guid: 64a9203bb2bc37648a8b576271f0b57c, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

@@ -25,6 +25,7 @@ public class HealthSystem : MonoBehaviour
     public void ResetHealth(){
         _currentHealth = _health;
         _isAlive = true;
+        SetHealth();
     }
 
     public void Hitted(int dommage){

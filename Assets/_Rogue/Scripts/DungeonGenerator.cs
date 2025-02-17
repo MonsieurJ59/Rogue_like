@@ -10,7 +10,7 @@ public class DungeonGenerator : MonoBehaviour
     public int nbRoom = 12; // Nombre total de salles
     public float roomSizeX = 30f; // Taille d'une salle (distance entre les centres)
     public float roomSizeY = 20f; // Taille d'une salle (distance entre les centres)
-    private List<GameObject> spawnedRooms = new List<GameObject>();
+    public List<GameObject> spawnedRooms = new List<GameObject>();
 
     void Start()
     {

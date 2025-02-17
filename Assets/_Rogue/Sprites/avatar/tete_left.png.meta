@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f5539b5142e044ce0940dcc00795623e
+guid: 619e6387109f9f042841a02288ae3c58
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6059687371871541870
-    second: doorOpen_0
+      213: -5855677922858637079
+    second: tete_left_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: doorOpen_0
+      name: tete_left_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 259
-        height: 229
+        width: 236
+        height: 269
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2952dadd07aa7eba0800000000000000
-      internalID: -6059687371871541870
+      spriteID: 9e8e9e034f37cbea0800000000000000
+      internalID: -5855677922858637079
       vertices: []
       indices: 
       edges: []

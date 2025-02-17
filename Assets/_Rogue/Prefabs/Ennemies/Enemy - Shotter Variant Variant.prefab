@@ -20,6 +20,26 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3720618954200940750, guid: 52e018e27a5850a4bb5203bee98ca357, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1725372122, guid: b631ed305dfd43c488e0f8edf5c829bc, type: 3}
+    - target: {fileID: 3720618954200940750, guid: 52e018e27a5850a4bb5203bee98ca357, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720618954200940750, guid: 52e018e27a5850a4bb5203bee98ca357, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720618954200940750, guid: 52e018e27a5850a4bb5203bee98ca357, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720618954200940750, guid: 52e018e27a5850a4bb5203bee98ca357, type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4468827922114559357, guid: 52e018e27a5850a4bb5203bee98ca357, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -59,6 +79,14 @@ PrefabInstance:
     - target: {fileID: 4468827922114559357, guid: 52e018e27a5850a4bb5203bee98ca357, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5447047769186060815, guid: 52e018e27a5850a4bb5203bee98ca357, type: 3}
+      propertyPath: _health
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605948361205861014, guid: 52e018e27a5850a4bb5203bee98ca357, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.586
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

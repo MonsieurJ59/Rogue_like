@@ -16,6 +16,26 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1711563233662220464, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1797346199, guid: b631ed305dfd43c488e0f8edf5c829bc, type: 3}
+    - target: {fileID: 1711563233662220464, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711563233662220464, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711563233662220464, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711563233662220464, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1902363859101517059, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -59,6 +79,14 @@ PrefabInstance:
     - target: {fileID: 2773001818154599346, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
       propertyPath: m_Name
       value: Enemy - Hunter Variant Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7615216286396478184, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.426
+      objectReference: {fileID: 0}
+    - target: {fileID: 8067415461939049073, guid: bc0a42c53525461458ffb97d8abe1bd1, type: 3}
+      propertyPath: _health
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
