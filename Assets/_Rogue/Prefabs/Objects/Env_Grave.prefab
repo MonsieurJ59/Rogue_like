@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5880767049639734449}
   - component: {fileID: 3912317231045554638}
   - component: {fileID: -1207289339998755276}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Env_Grave
   m_TagString: Wall
   m_Icon: {fileID: 0}

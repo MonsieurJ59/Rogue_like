@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Rogue/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/_Rogue/Scenes/Start.unity
+    guid: 24736693f866d534cb8dc40dbdf44409
+  - enabled: 1
+    path: Assets/_Rogue/Scenes/Main.unity
+    guid: 496e3e95b6bad4b48bdfafc2d2df56f4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

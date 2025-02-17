@@ -114,7 +114,10 @@ public class Room : MonoBehaviour
     }
 
     public void ClearEvent(){
-        clear = true;
+        if(!clear){
+            clear = true;
+            GameManager._gameManager._playerHealthSystem.HealByClearRoom();
+        }
         this.gameObject.GetComponent<CurseRoom>().Uncurse();
         OpenDoors();
         _clearEvent.Invoke();

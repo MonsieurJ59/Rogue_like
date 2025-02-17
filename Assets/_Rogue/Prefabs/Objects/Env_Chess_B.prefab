@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8091091764564893453}
   - component: {fileID: 2392085410909307437}
   - component: {fileID: 3932845585125814680}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Env_Chess_B
   m_TagString: Wall
   m_Icon: {fileID: 0}
