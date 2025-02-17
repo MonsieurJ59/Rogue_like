@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7785117819513670912}
   - component: {fileID: 8861664178895164709}
   - component: {fileID: 3685052610238996058}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Prop_TreeC
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3703600539198435510}
   - component: {fileID: 5355101128623934793}
   - component: {fileID: 9006833481594302764}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Env_Altar
   m_TagString: Wall
   m_Icon: {fileID: 0}

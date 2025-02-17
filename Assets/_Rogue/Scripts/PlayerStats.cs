@@ -6,6 +6,9 @@ public class PlayerStats : MonoBehaviour
     public int _initHealth;
     int _health;
 
+    public int _initHealByRoom;
+    int _healByRoom;
+
     [Header("Speed Settings")]
     public float _initSpeed;
     float _speed;
@@ -21,6 +24,7 @@ public class PlayerStats : MonoBehaviour
     void Awake(){
         // Health Settings
         _health = _initHealth;
+        _healByRoom = _initHealByRoom;
 
         // Speed Settings
         _speed = _initSpeed;
@@ -37,6 +41,14 @@ public class PlayerStats : MonoBehaviour
 
     public void SetHealth(int value){
         _health = value;
+    }
+
+    public int GetHealByRoom(){
+        return _healByRoom;
+    }
+
+    public void SetHealByRoom(int value){
+        _healByRoom = value;
     }
 
     public float GetSpeed(){

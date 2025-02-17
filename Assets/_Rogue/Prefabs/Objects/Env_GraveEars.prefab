@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7078968400348816189}
   - component: {fileID: 6679338949388120145}
   - component: {fileID: -7175128837378550189}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Env_GraveEars
   m_TagString: Wall
   m_Icon: {fileID: 0}

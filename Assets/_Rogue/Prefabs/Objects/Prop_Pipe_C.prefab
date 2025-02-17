@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1520719905149725813}
   - component: {fileID: 3454038093318249742}
   - component: {fileID: 4946198415275380795}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Prop_Pipe_C
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

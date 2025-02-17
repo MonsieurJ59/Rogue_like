@@ -43,6 +43,10 @@ public class PlayerHealthSystem : MonoBehaviour
         SetHealth();
     }
 
+    public void HealByClearRoom(){
+        Healed(GameManager._gameManager._playerStats.GetHealByRoom());
+    }
+
     void SetHealth()
     {
         if(_healthbar){

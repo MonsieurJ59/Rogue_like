@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1646285468568875656}
   - component: {fileID: 3428252848074417688}
   - component: {fileID: -1802553769129267100}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Prop_Vase_C
   m_TagString: Wall
   m_Icon: {fileID: 0}
