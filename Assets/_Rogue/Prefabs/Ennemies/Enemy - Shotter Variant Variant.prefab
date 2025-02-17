@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy - Shotter Variant Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 729637397803958348, guid: 52e018e27a5850a4bb5203bee98ca357, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2716810267886857150, guid: 52e018e27a5850a4bb5203bee98ca357, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -86,7 +90,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5605948361205861014, guid: 52e018e27a5850a4bb5203bee98ca357, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.586
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7902121658324890495, guid: 52e018e27a5850a4bb5203bee98ca357, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
