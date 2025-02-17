@@ -4,10 +4,14 @@ public class OpenMaps : MonoBehaviour
 {
     public GameObject _maps;
     public GameObject _position;
-    private bool isPaused = false;
+    public bool isPaused = false;
+    public ShowCurse _showCurse;
 
     void OnMaps()
     {
+        if(_showCurse.isPaused){
+            return;
+        }
         ToggleMap();
     }
 
