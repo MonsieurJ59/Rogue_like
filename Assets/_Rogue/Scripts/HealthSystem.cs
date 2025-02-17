@@ -32,10 +32,12 @@ public class HealthSystem : MonoBehaviour
         _currentHealth -= dommage;
         if(_currentHealth <= 0)
         {
+            _dieEffects.Invoke();
             _currentHealth = 0;
             _isAlive = false;
+
             GetComponent<EnemyData>()._room.CheckClear();
-            _dieEffects.Invoke();
+        
         }
         _hitEffects.Invoke();
         SetHealth();

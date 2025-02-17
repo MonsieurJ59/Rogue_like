@@ -1524,6 +1524,10 @@ PrefabInstance:
       propertyPath: clear
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3821537984087514898, guid: ff5982555346e744c870dafb76b5c37f, type: 3}
+      propertyPath: _enemies.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3913747227546848522, guid: ff5982555346e744c870dafb76b5c37f, type: 3}
       propertyPath: m_IsActive
       value: 0
