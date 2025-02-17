@@ -1,0 +1,47 @@
+# Maze of Malice 
+
+## Support
+
+PC (Clavier)
+
+## Genre
+
+Rogue-like en 2D
+
+## Elevator Pitch
+
+Vous incarnez un héros intrépide explorant un donjon généré aléatoirement, rempli de salles uniques et de défis imprévus. Votre mission : survivre, vaincre les ennemis, surmonter les obstacles et trouver la sortie tout en gérant des malus qui compliquent chaque nouvelle tentative.
+
+## Présentation du Jeu
+
+Maze of Malice est un rogue-like 2D où chaque mort applique une malédiction aléatoire : baisse de vitesse, dégâts réduits, cadence de tir ralentie, etc. Pour lever une malédiction, il faut retourner dans la salle de la mort et éliminer tous les ennemis.
+
+## Conditions de Victoire/Défaite
+
+* Victoire : Trouver la sortie du donjon.
+
+* Défaite : Mourir et relancer une nouvelle partie.
+
+## Contrôles du Jeu
+
+* Déplacement : Z (haut), Q (gauche), S (bas), D (droite)
+
+* Tir : Flèches directionnelles
+
+* Affichage : P (malédictions), M (carte)
+
+## Malédictions
+
+* Vitesse des projectiles réduite
+
+* Dégâts réduits
+
+* Cadence de tir ralentie
+
+* Vitesse de déplacement réduite
+
+* Points de vie diminués
+
+## Environnement
+
+Salles générées aléatoirement avec obstacles et ennemis divers.
